@@ -1,191 +1,383 @@
+@media (min-width: 769px) {
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+  }
+
+  /* 헤더, 히어로 섹션 스타일링 */
+  header {
+    /* background-color: #4CAF50; 초록색 */
+    color: white;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+  }
+
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+      url("/img/hero2.jpg ");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left {
+    width: 55%;
+  }
+
+  .left > * {
+    text-align: center;
+  }
+
+  .right {
+    width: 45%;
+  }
+
+  /* 섹션 스타일링 */
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .contact {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact input,
+  .contact textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .contact button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  .contact button:hover {
+    background-color: #45a049;
+  }
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-main-message {
+    margin-top: 25%;
+    margin-bottom: 15px;
+    font-size: 44px;
+    font-weight: 800;
+  }
+
+  .left-sub-message {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .left-contact-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .left-contact-message {
+  }
+
+  .submit-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 25%;
+  }
+
+  .right-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-input {
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .right-input-div {
+    text-align: left;
+    padding: 5px;
+  }
+
+  .right-input-message {
+    width: 80%;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .chanel-talk-icon {
+    width: 51px;
+    height: 51px;
+  }
+
+  .chanel-talk-message-box {
+  }
+
+  .chanel-talk-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .chanel-talk-message-box {
+    height: 35px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-left: 6px;
+  }
+
+  .submit-btn {
+    background-color: #3cb371;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    border-radius: 5px;
+    margin-left: 67%;
+    cursor: pointer;
+  }
+}
 /* 전체 페이지 스타일링 */
-body {
-  font-family: "Arial", sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f0f0f0;
-}
-
-/* 헤더, 히어로 섹션 스타일링 */
-header {
-  /* background-color: #4CAF50; 초록색 */
-  color: white;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  /* padding: 1rem; */
-}
-
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
-    url("/img/hero2.jpg ");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100vw;
-  height: 100vh;
-  color: white;
-  display: flex;
-  flex-direction: row;
-}
-
-.left {
-  width: 55%;
-}
-
-.left > * {
-  text-align: center;
-}
-
-.right {
-  width: 45%;
-}
-
-/* 섹션 스타일링 */
-section {
-  padding: 2rem;
-  text-align: center;
-}
-
-.contact {
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-  width: 60%;
-  margin: auto;
-}
-
-.contact input,
-.contact textarea {
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-.contact button {
-  background-color: #4caf50;
-  color: white;
-  padding: 0.5rem;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-.contact button:hover {
-  background-color: #45a049;
-}
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
   }
-}
 
-.hero-img {
-  width: 100%;
-  height: 100%;
-}
+  body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0;
+  }
 
-.left-main-message {
-  margin-top: 25%;
-  margin-bottom: 15px;
-  font-size: 44px;
-  font-weight: 800;
-}
+  /* 헤더, 히어로 섹션 스타일링 */
+  header {
+    /* background-color: #4CAF50; 초록색 */
+    color: white;
+  }
 
-.left-sub-message {
-  font-size: 28px;
-  font-weight: 500;
-}
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+  }
 
-.left-contact-title {
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: 700;
-}
+  .hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+      url("/img/hero2.jpg ");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    /* display: flex;
+    flex-direction: row; */
+  }
 
-.left-contact-message {
-}
+  .left {
+    width: 100%;
+  }
 
-.submit-title {
-  text-align: center;
-  font-size: 32px;
-  font-weight: 800;
-  margin-top: 25%;
-}
+  .left > * {
+    text-align: center;
+  }
 
-.right-contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+  .right {
+    width: 100%;
+  }
 
-.right-input {
-  width: 60%;
-  height: 30px;
-  border: none;
-  border-radius: 10px;
-}
+  /* 섹션 스타일링 */
+  section {
+    padding: 2rem;
+    text-align: center;
+  }
 
-.right-input-div {
-  text-align: left;
-  padding: 5px;
-}
+  .contact {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-.right-input-message {
-  width: 80%;
-  height: 120px;
-  border: none;
-  border-radius: 10px;
-}
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 60%;
+    margin: auto;
+  }
 
-.chanel-talk-icon {
-  width: 51px;
-  height: 51px;
-}
+  .contact input,
+  .contact textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 
-.chanel-talk-message-box {
-}
+  .contact button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+  }
 
-.chanel-talk-div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
-}
+  .contact button:hover {
+    background-color: #45a049;
+  }
 
-.chanel-talk-message-box {
-  height: 35px;
-  padding: 8px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 15px;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: 35px;
-  margin-left: 6px;
-}
+  .hero-img {
+    width: 100%;
+    height: 100%;
+  }
 
-.submit-btn {
-  background-color: #3cb371;
-  border: none;
-  width: 100px;
-  height: 40px;
-  font-size: 18px;
-  font-weight: 800;
-  color: black;
-  border-radius: 5px;
-  margin-left: 67%;
-  cursor: pointer;
+  .left-main-message {
+    margin-top: 25%;
+    margin-bottom: 15px;
+    font-size: 44px;
+    font-weight: 800;
+  }
+
+  .left-sub-message {
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .left-contact-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .left-contact-message {
+  }
+
+  .submit-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-top: 25%;
+  }
+
+  .right-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right-input {
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .right-input-div {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .right-input-message {
+    width: 60%;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .chanel-talk-icon {
+    width: 51px;
+    height: 51px;
+  }
+
+  .chanel-talk-message-box {
+  }
+
+  .chanel-talk-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .chanel-talk-message-box {
+    height: 35px;
+    padding: 8px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-left: 6px;
+  }
+
+  .submit-btn {
+    background-color: #3cb371;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    border-radius: 5px;
+    margin-left: 67%;
+    cursor: pointer;
+  }
+
+  .form-name {
+    text-align: left;
+    width: 60%;
+    margin: auto;
+  }
 }
