@@ -35,17 +35,19 @@ document
         "X-Custom-Header": "foobar",
       },
     });
-    console.log("문의하기 데이터:", formData);
+    // console.log("문의하기 데이터:", formData);
     // const axios = require("axios");
     // axios.defaults.baseURL = "http://192.168.0.3:8080";
 
     instance
       .post("/send", formData)
       .then((res) => {
-        console.log(res);
+        this.reset();
+        alert("문의가 성공적으로 제출되었습니다!");
+        // console.log(res);
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
       });
 
     // instance
@@ -61,5 +63,4 @@ document
     // 문의가 성공적으로 제출되었다는 메시지를 사용자에게 보여주는 코드를 추가할 수 있습니다.
 
     // 폼을 초기화합니다.
-    // this.reset();
   });
