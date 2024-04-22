@@ -27,8 +27,9 @@ document
     } else if (!formData.phone.toString().trim()) {
       alert("전화번호를 입력해주세요.");
     }
+
     const instance = axios.create({
-      baseURL: "http://localhost:8080/",
+      baseURL: "http://121.166.23.90:8081/",
       timeout: 1000,
       headers: {
         "X-Custom-Header": "foobar",
