@@ -19,12 +19,16 @@ document
 
     if (!formData.company.toString().trim()) {
       alert("회사명을 입력해주세요.");
+      return;
     } else if (!formData.name.toString().trim()) {
       alert("이름을 입력해주세요.");
+      return;
     } else if (!formData.email.toString().trim()) {
       alert("이메일을 입력해주세요.");
+      return;
     } else if (!formData.phone.toString().trim()) {
       alert("전화번호를 입력해주세요.");
+      return;
     }
 
     const instance = axios.create({
