@@ -17,7 +17,6 @@ document
     // 여기서 AJAX 요청을 작성할 수 있습니다.
     // 예를 들어, 서버에 formData를 JSON 형식으로 보내는 코드를 추가할 수 있습니다.
 
-    console.log(formData.company);
     if (!formData.company.toString().trim()) {
       alert("회사명을 입력해주세요.");
     } else if (!formData.name.toString().trim()) {
