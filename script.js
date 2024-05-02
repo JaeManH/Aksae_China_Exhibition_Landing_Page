@@ -67,3 +67,12 @@ document
 
     // 폼을 초기화합니다.
   });
+
+function toggleAccordion() {
+  var panel = document.querySelector(".accordion .panel");
+  if (panel.style.display === "block") {
+    panel.style.display = "none";
+  } else {
+    panel.style.display = "block";
+  }
+}
